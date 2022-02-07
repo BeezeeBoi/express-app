@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: antiquewhite;
+  background-color: black;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-content: flex-end;
+  padding-top: 80vh;
+}
+
+.bg-image {
+  display: flex;
+  margin: auto;
+  max-height: 50%;
+  max-width: 50%;
+}
