@@ -6,17 +6,24 @@ body {
   background-color: black;
 }
 
-footer {
+nav {
   display: flex;
-  position: fixed;
-  justify-content: center;
-  align-content: flex-end;
-  padding-top: 80vh;
 }
 
-.bg-image {
+nav div {
   display: flex;
   margin: auto;
-  max-height: 50%;
-  max-width: 50%;
+}
+
+nav button {
+  min-width: 10vmin;
+  min-height: 5vmin;
+
+}
+
+footer {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-top: auto;
 }
