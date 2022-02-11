@@ -122,5 +122,4 @@ dist
 # IntelliJ project files
 .idea
 *.iml
-out
 gen
