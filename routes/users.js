@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const newUser = require('./auth/signup');
+const loginUser = require('./auth/login');
 
 /* GET users listing. */
 router.get('/', (req, res) => {
@@ -8,5 +9,6 @@ router.get('/', (req, res) => {
 });
 
 router.use('/new', newUser);
+router.use('/login', loginUser);
 
 module.exports = router;
