@@ -1,8 +1,14 @@
 const express = require('express');
 const { createNewUser } = require('../../controllers/user');
 const db = require('../../controllers/knexConfig');
+const { getCurrentYear } = require('../../util/getCurrentYear');
+const path = require('path');
 
 const router = express.Router();
+
+router.get('/', (req, res) => {
+  res.render('auth/signup', { title: 'Signup', year: getCurrentYear });
+})
 
 router.post('/', (req, res) => {
   const { email, name, password } = req.body;

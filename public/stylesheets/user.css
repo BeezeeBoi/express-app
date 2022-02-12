@@ -1,0 +1,7 @@
+form {
+  text-align: center;
+}
+
+form input {
+  display: flex;
+}

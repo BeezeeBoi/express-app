@@ -1,0 +1,26 @@
+<%- include('../partials/head.ejs') %>
+
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel="stylesheet" href="/stylesheets/user.css" />
+</head>
+<body>
+
+<nav>
+  <h1>Express-app</h1>
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+  </ul>
+</nav>
+
+<div>
+  <form>
+    <input type="text" name="user-name" aria-label="name" required />
+    <input type="email" name="email" aria-label="email" required  />
+    <input type="password" name="password" aria-label="password" required />
+  </form>
+</div>
+
+<%- include('../partials/footer.ejs') %>
+
