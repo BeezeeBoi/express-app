@@ -35,7 +35,8 @@ const createNewUser = async (email, name, password) => {
           user.name = name;
           user.email = email;
           return user;
-        });
+        })
+        .catch(err => console.log(err));
     });
   });
 };
