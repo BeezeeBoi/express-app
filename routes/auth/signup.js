@@ -1,5 +1,5 @@
 const express = require('express');
-const { createNewUser, validateUser } = require('../../controllers/user');
+const { createNewUser } = require('../../controllers/user');
 const db = require('../../controllers/knexConfig');
 
 const router = express.Router();
