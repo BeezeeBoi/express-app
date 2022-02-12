@@ -4,8 +4,18 @@ const db = require('../../controllers/knexConfig');
 
 const router = express.Router();
 
-router.post('/',(req, res) => {
+router.post('/', (req, res) => {
   const { email, name, password } = req.body;
+
+  if (!email) {
+    return res.status(400).json('Enter a valid email');
+  }
+  else if (!name) {
+    return res.status(400).json('Enter a valid name');
+  }
+  else if (!password) {
+    return res.status(400).json('Enter a valid password');
+  }
 
   db.select('*')
     .from('users')
@@ -15,7 +25,8 @@ router.post('/',(req, res) => {
       const result = user.length;
       if (result === 1) {
         return res.status(400).json('Invalid Credentials');
-      } else {
+      }
+      else {
         createNewUser(email, name, password)
           .then(() => res.status(200).json('user created'))
           .catch(() => res.status(400).json('error occurred'));
