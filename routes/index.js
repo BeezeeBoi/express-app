@@ -1,8 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const router = express.Router();
-
-const year = new Date().getFullYear();
+const year = require('../util/getCurrentYear');
 
 /* GET home page. */
 router.get('/', function(req, res) {
