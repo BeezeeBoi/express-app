@@ -1,6 +1,5 @@
 <%- include('../partials/head.ejs') %>
 
-<link rel='stylesheet' href='/stylesheets/style.css' />
 <link rel="stylesheet" href="/stylesheets/user.css" />
 </head>
 <body>
@@ -14,13 +13,18 @@
   </ul>
 </nav>
 
-<div>
-  <form>
-    <input type="text" name="user-name" aria-label="name" required />
-    <input type="email" name="email" aria-label="email" required  />
-    <input type="password" name="password" aria-label="password" required />
-  </form>
-</div>
+<form action="http://localhost:3000/users/new" method="POST">
+  <label for="name">Name:</label>
+  <input id="name" type="text" name="name" aria-label="name" required autofocus />
+  <br>
+  <label for="email">Email:</label>
+  <input id="email" type="email" name="email" aria-label="email" required />
+  <br>
+  <label for="password">Password:</label>
+  <input id="password" type="password" name="password" aria-label="password" minlength="8" required />
+  <br>
+  <button type="submit">Submit</button>
+</form>
 
 <%- include('../partials/footer.ejs') %>
 
