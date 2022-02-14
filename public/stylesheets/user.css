@@ -1,7 +1,42 @@
 form {
+  background-color: #520120;
   text-align: center;
+  font-family: Papyrus, serif;
+}
+
+form label {
+  position: relative;
+  right: 50px;
+  border: 10px groove #962B09;
+  box-sizing: border-box;
+  background-color: #B57114;
+  padding: 25px;
+  border-block: 10px groove #706513;
+  border-radius: 20px;
+  font-size: 2em;
+}
+
+form label:hover {
+  cursor: pointer;
 }
 
 form input {
-  display: flex;
+  margin: 5vh auto;
+  background-color: #08403E;
+  color: #B57114;
+  font-size: 2em;
+}
+
+button {
+  background-color: #962B09;
+  color: #B57114;
+  margin: 3em 0;
+  padding: 1em 2em;
+  border: 2px solid;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #B57114;
+  color: #962B09;
 }

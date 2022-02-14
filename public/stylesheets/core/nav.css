@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  border-bottom: 0.2em solid #962B09;
+}
+
+nav ul {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+nav li {
+  padding: 0 25px;
+}
+
+nav a {
+  border: 3px double burlywood;
+  background-color: dimgray;
+  padding: 7px;
+  text-decoration-line: none;
+  color: cadetblue;
+}
