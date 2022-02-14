@@ -1,6 +1,7 @@
 const express = require('express');
 const { getUser } = require('../../controllers/user');
 const { getCurrentYear } = require('../../util/getCurrentYear');
+const { userError } = require('user_error');
 
 const router = express.Router();
 
@@ -13,5 +14,7 @@ router.post('/', ((req, res) => {
 
   if (!email || !password) return res.status(400).json('please enter email and password');
 }));
+
+router.use('/error', (req, res) => userError);
 
 module.exports = router;

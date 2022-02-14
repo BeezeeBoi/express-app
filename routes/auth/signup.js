@@ -3,6 +3,7 @@ const { createNewUser } = require('../../controllers/user');
 const db = require('../../controllers/knexConfig');
 const { getCurrentYear } = require('../../util/getCurrentYear');
 const path = require('path');
+const { userError } = require('user_error');
 
 const router = express.Router();
 
@@ -40,5 +41,7 @@ router.post('/', (req, res) => {
     })
     .catch(err => console.log(err));
 });
+
+router.use('/error', (req, res) => userError);
 
 module.exports = router;
