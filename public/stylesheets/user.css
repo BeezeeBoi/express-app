@@ -27,7 +27,7 @@ form input {
   font-size: 2em;
 }
 
-button {
+form button {
   background-color: #962B09;
   color: #B57114;
   margin: 3em 0;
@@ -35,7 +35,7 @@ button {
   border: 2px solid;
 }
 
-button:hover {
+form button:hover {
   cursor: pointer;
   background-color: #B57114;
   color: #962B09;
