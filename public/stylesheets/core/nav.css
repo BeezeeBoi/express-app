@@ -20,3 +20,7 @@ nav a {
   text-decoration-line: none;
   color: cadetblue;
 }
+
+nav a:hover {
+  cursor: pointer;
+}
