@@ -47,7 +47,9 @@ function getUser(email, password) {
     .withSchema('client')
     .returning('hash')
     .then(user => {
-      bcrypt.compare(password, user[0].hash);
+      bcrypt.compare(password, user[0].hash).then(result => {
+        return !result ? false : true;
+      });
     });
   // bcrypt.compare(password, userPassword);
 }
