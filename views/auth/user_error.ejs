@@ -5,7 +5,7 @@
 <body>
 
 <nav>
-  <h1>Express-app</h1>
+  <h2>Express-app</h2>
   <ul>
     <li>
       <a href="/">Home</a>
@@ -13,8 +13,16 @@
   </ul>
 </nav>
 
-<div>
-  <h2></h2>
-</div>
+<main>
+  <h1>An error has occurred while processing your request</h1>
+  <form action="http://localhost:3000/users/new" method="GET">
+    <label for="signup">Try Again</label>
+    <button type="submit">Signup</button>
+  </form>
+  <form action="http://localhost:3000/users/new" method="GET">
+    <label for="login">Try Again</label>
+    <button type="submit">Login</button>
+  </form>
+</main>
 
 <%- include('../partials/footer.ejs') %>
