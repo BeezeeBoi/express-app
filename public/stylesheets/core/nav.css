@@ -3,14 +3,24 @@ nav {
   border-bottom: 0.2em solid #962B09;
 }
 
+nav h1 {
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
 nav ul {
-  display: flex;
-  margin-left: auto;
+  display: inline-flex;
+  justify-content: flex-end;
   list-style-type: none;
+  padding-left: 0;
 }
 
 nav li {
-  padding: 0 25px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 1rem;
+  /*padding: 0 25px;*/
 }
 
 nav a {
